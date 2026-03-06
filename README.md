@@ -30,9 +30,9 @@ CREATE TABLE retail_sales
     sale_date DATE,	
     sale_time TIME,
     customer_id INT,	
-    gender VARCHAR(10),
+    gender VARCHAR(15),
     age INT,
-    category VARCHAR(35),
+    category VARCHAR(20),
     quantity INT,
     price_per_unit FLOAT,	
     cogs FLOAT,
@@ -76,7 +76,7 @@ FROM retail_sales
 WHERE sale_date = '2022-11-05';
 ```
 
-2. **Write a SQL query to retrieve all transactions where the category is 'Clothing' and the quantity sold is more than 4 in the month of Nov-2022**:
+2. **Write a SQL query to retrieve all transactions where the category is 'Clothing' and the quantity sold is more than 3 in the month of Nov-2022**:
 ```sql
 SELECT 
   *
@@ -89,7 +89,7 @@ WHERE
     quantity >= 4
 ```
 
-3. **Write a SQL query to calculate the total sales (total_sale) for each category.**:
+3. **Write a SQL query to calculate the total sales (total_sale) and total orders for each category.**:
 ```sql
 SELECT 
     category,
@@ -210,13 +210,12 @@ This project serves as a comprehensive introduction to SQL for data analysts, co
 3. **Run the Queries**: Use the SQL queries provided in the `analysis_queries.sql` file to perform your analysis.
 4. **Explore and Modify**: Feel free to modify the queries to explore different aspects of the dataset or answer additional business questions.
 
-## Author - Zero Analyst
+Sharani Udara
+Supply Chain & Data Analysis Professional
 
-This project is part of my portfolio, showcasing the SQL skills essential for data analyst roles. If you have any questions, feedback, or would like to collaborate, feel free to get in touch!
+This project is part of my portfolio, demonstrating SQL skills essential for data analyst roles. It showcases my ability to work with data cleaning, deduplication, and database management.
 
-### Stay Updated and Join the Community
-
-For more content on SQL, data analysis, and other data-related topics, make sure to follow me on social media and join our community:
+If you have any questions, feedback, or would like to collaborate, feel free to get in touch!
 
 - **LinkedIn**: [Connect with me professionally](https://www.linkedin.com/in/sharani-udara-369880222)
 
